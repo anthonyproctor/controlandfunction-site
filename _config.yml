@@ -1,0 +1,17 @@
+# GitHub Pages (Jekyll) publishes the whole repo root unless told otherwise.
+# Only the public site belongs in this repo. Internal notes, QA scripts and
+# drafts live outside it. This list is a second line of defense, not the first.
+exclude:
+  - "*.md"
+  - package.json
+  - package-lock.json
+  - input.css
+  - node_modules
+  - scripts
+  - notes
+  - drafts
+  - internal
+  - "*.py"
+  - "*.sh"
+  - .gitignore
+  - .npmrc

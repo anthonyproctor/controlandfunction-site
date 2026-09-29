@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control and Function, SOC 2 Readiness Consulting</title>
+    <meta name="description" content="SOC 2 readiness for companies whose buyers are asking for a report. Operator led, fixed price, fully remote. HIPAA, ISO 27001 and FERPA handled alongside.">
+    <link rel="canonical" href="https://controlandfunction.com/">
+
+    <!-- Open Graph (LinkedIn / Facebook / Slack previews) -->
+    <meta property="og:title" content="Control and Function, SOC 2 Readiness Consulting">
+    <meta property="og:description" content="We don't sell platforms. We earn audits. SOC 2 readiness from first gap assessment to auditor handoff, at a fixed price.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://controlandfunction.com/">
+    <meta property="og:image" content="https://controlandfunction.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Control and Function">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Control and Function, SOC 2 Readiness Consulting">
+    <meta name="twitter:description" content="We don't sell platforms. We earn audits. SOC 2 readiness from first gap assessment to auditor handoff, at a fixed price.">
+    <meta name="twitter:image" content="https://controlandfunction.com/assets/og-image.png">
+
+    <!-- Favicon (place favicon.ico, favicon.svg in root) -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Schema.org structured data: Organization + ProfessionalService -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Control and Function",
+  "url": "https://controlandfunction.com",
+  "logo": "https://controlandfunction.com/assets/og-image.png",
+  "description": "SOC 2 readiness consulting for companies whose buyers have started asking for a report, with HIPAA, ISO 27001 and FERPA obligations mapped into the same control set.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Denver",
+    "addressRegion": "CO",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/controlandfunction"
+  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "email": "hello@controlandfunction.com",
+  "priceRange": "$2,500 to $15,000+",
+  "serviceType": [
+    "SOC 2 Readiness Consulting",
+    "SOC 2 Gap Assessment",
+    "HIPAA Compliance Consulting",
+    "ISO 27001 Readiness Consulting",
+    "Compliance Program Maintenance"
+  ],
+  "knowsAbout": [
+    "SOC 2 Type I",
+    "SOC 2 Type II",
+    "Trust Services Criteria",
+    "HIPAA",
+    "ISO 27001",
+    "FERPA",
+    "Vendor security questionnaires",
+    "Higher education procurement",
+    "Vanta",
+    "Drata",
+    "Secureframe"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "SOC 2 readiness services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "price": "2500",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Readiness Diagnostic",
+          "description": "A two week independent read of where you stand against the criteria in scope, including a re-derivation of anything already believed done. Credits in full against a larger engagement within 60 days."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "8000",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SOC 2 Readiness Coaching",
+          "description": "Four to eight weeks. Office hours, document review, control guidance and auditor liaison while the client's own team drives the work, plus setup of the client's own AI assistant to work the readiness checklist with them."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "15000",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Full SOC 2 Readiness",
+          "description": "Twelve to sixteen weeks, driven end to end. Policies, control implementation, evidence collection, vendor reviews, pre-audit walkthrough and handoff to an independent licensed CPA firm."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "1500",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Managed Compliance",
+          "description": "Rolling monthly, $1,500 to $5,000. The compliance calendar runs, criteria are re-validated on cadence with a written record of what was examined, and security questionnaires are answered from a maintained library."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "1500",
+        "priceCurrency": "USD",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Prepaid Hours",
+          "description": "A block of advisory hours bought up front: 10 hours for $1,500 or 20 hours for $2,800, used within 12 months. For teams that want someone to call instead of a monthly retainer, or help past the scope of a coaching engagement."
+        }
+      }
+    ]
+  }
+}
+    </script>
+
+    <!-- Schema.org FAQ markup (helps Google rich results AND LLM citations) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What does SOC 2 readiness cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A Readiness Diagnostic, an independent read of where you actually stand, is $2,500 and credits in full against a larger engagement within 60 days. Readiness coaching starts at $8,000 for teams that will drive the work themselves. Full SOC 2 readiness, where we drive the program end to end, starts at $15,000. Managed compliance retainers run $1,500 to $5,000 per month after your audit. Dual-framework engagements covering HIPAA or ISO 27001 alongside SOC 2 are scoped individually. Engagements are fixed price. If you would rather have someone to call than a project, prepaid hours are available: 10 hours for $1,500 or 20 for $2,800, used within 12 months."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you perform the SOC 2 audit itself?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. SOC 2 audits are performed by licensed CPA firms. Control and Function provides readiness and advisory services only: we prepare you for the audit, refer you to an audit firm when you are ready, and support you through the audit window. We never audit our own work. That separation is deliberate and protects the integrity of your report."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does SOC 2 readiness take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A full readiness engagement typically runs 12 to 16 weeks from kickoff to auditor handoff: scope and gap assessment in weeks 1 to 3, controls built in weeks 4 to 7, evidence collected in weeks 8 to 12, and auditor handoff in weeks 13 to 16. Coaching engagements run 4 to 8 weeks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between SOC 2 Type I and Type II?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A Type I report assesses whether your controls are suitably designed at a point in time. A Type II report assesses whether those controls operated effectively over a period, usually 3 to 12 months. Most companies pursue a Type I first to satisfy buyers quickly, then move to Type II over the following observation period. We help you sequence this against your actual deal pressure."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do we need Vanta, Drata, or Secureframe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Not necessarily. Compliance platforms automate evidence collection well for some environments and poorly for others. Our advice stays platform-neutral, and our partner relationships with the major platforms get you partner pricing you cannot get going direct. Some vendors also pay us a referral fee when a client we introduce signs; we disclose it in writing before it is earned, and it never changes the recommendation. If a platform fits your stack we will implement it with you, and if it does not, the one SOC 2 Type I our operator led at a prior company used no platform at all and passed clean on the first attempt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you handle HIPAA, FERPA, or ISO 27001 alongside SOC 2?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. SaaS companies selling into healthcare face HIPAA, education technology companies handling student records face FERPA obligations in their university contracts, and companies selling internationally are often asked for ISO 27001. We scope the SOC 2 work to map these obligations into a single control set, so you build one program instead of three."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Precompiled Tailwind (npm run build:css regenerates assets/site.css) -->
+    <link rel="stylesheet" href="/assets/site.css">
+
+    <!-- GoatCounter analytics (free, privacy-friendly, no cookies) -->
+    <script data-goatcounter="https://controlandfunction.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+
+    <!-- Inter font -->
+    <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(180deg, #fafbfc 0%, #ffffff 100%);
+        }
+        .accent-text { color: #1e3a8a; }
+        .accent-bg { background-color: #1e3a8a; }
+        .accent-bg:hover { background-color: #1e40af; }
+        .card-shadow { box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06); }
+        .card-shadow:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        /* Timeline connecting line */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 1.25rem;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #cbd5e1;
+            z-index: 0;
+        }
+    </style>
+<meta name="msvalidate.01" content="F024BF07DAB188D1FAC954E560FC2747" />
+</head>
+<body class="text-slate-900 antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:text-slate-900 focus:shadow-lg">Skip to content</a>
+
+    <!-- Top bar -->
+    <header class="border-b border-slate-200 bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="font-bold text-lg tracking-tight">Control and Function</div>
+            <nav aria-label="Main" class="hidden md:flex space-x-8 text-sm text-slate-600">
+                <a href="#services" class="hover:text-slate-900">Services</a>
+                <a href="#frameworks" class="hover:text-slate-900">Frameworks</a>
+                <a href="#guides" class="hover:text-slate-900">Guides</a>
+                <a href="#about" class="hover:text-slate-900">About</a>
+                <a href="#faq" class="hover:text-slate-900">FAQ</a>
+                <a href="#contact" class="hover:text-slate-900">Contact</a>
+            </nav>
+            <details class="cf-menu md:hidden relative">
+                <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer inline-flex items-center gap-2 min-h-11 px-4 rounded-lg border border-slate-300 text-sm font-semibold text-slate-800 hover:bg-slate-50">
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu
+                </summary>
+                <nav aria-label="Main" class="absolute right-0 top-full mt-2 w-60 rounded-lg border border-slate-200 bg-white py-2 shadow-lg z-50">
+                    <ul>
+                    <li><a href="#services" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">Services</a></li>
+                    <li><a href="#frameworks" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">Frameworks</a></li>
+                    <li><a href="#guides" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">Guides</a></li>
+                    <li><a href="#about" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">About</a></li>
+                    <li><a href="#faq" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">FAQ</a></li>
+                    <li><a href="#contact" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">Contact</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <main id="main">
+
+    <!-- Hero -->
+    <section class="gradient-bg relative overflow-hidden">
+        <!-- Decorative geometric grid pattern -->
+        <svg class="hidden md:block absolute top-0 right-0 h-full w-1/2 text-slate-200 opacity-30" preserveAspectRatio="xMaxYMid slice" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                </pattern>
+            </defs>
+            <rect width="800" height="600" fill="url(#grid)"/>
+        </svg>
+
+        <!-- Decorative accent shape -->
+        <div class="hidden md:block absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/3 w-[600px] h-[600px] rounded-full opacity-[0.04] accent-bg"></div>
+
+        <div class="max-w-5xl mx-auto px-6 py-24 md:py-36 relative">
+            <p class="text-sm font-semibold accent-text mb-6 uppercase tracking-widest">SOC 2 · HIPAA · ISO 27001</p>
+
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.02] max-w-4xl">
+                We don't sell platforms. <span class="accent-text italic">We earn audits.</span>
+            </h1>
+
+            <p class="text-2xl md:text-3xl text-slate-700 font-medium mb-8 leading-snug max-w-3xl">
+                SOC 2 readiness for companies whose buyers have started asking for a report.
+            </p>
+
+            <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
+                Your buyers are asking for a SOC 2 report and your engineers are asking who owns it. We take you from first gap assessment to auditor handoff with fixed pricing, operator-led delivery, and no platform to buy.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3 mb-12">
+                <a href="https://calendly.com/controlandfunction/discovery-call?utm_source=controlandfunction&amp;utm_medium=site&amp;utm_campaign=hero" class="accent-bg text-white px-7 py-4 rounded-lg font-semibold inline-flex items-center justify-center transition shadow-md hover:shadow-lg">
+                    Book a readiness call
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <a href="#services" class="border border-slate-300 text-slate-700 px-7 py-4 rounded-lg font-semibold inline-flex items-center justify-center hover:bg-white hover:border-slate-400 transition">
+                    Explore services
+                </a>
+            </div>
+
+            <!-- Proof row -->
+            <div class="border-t border-slate-200 pt-8 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl">
+                <div>
+                    <div class="text-2xl font-bold accent-text">12 to 16 wks</div>
+                    <div class="text-sm text-slate-500 mt-1">From kickoff to auditor handoff, full readiness</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold accent-text">Fixed price</div>
+                    <div class="text-sm text-slate-500 mt-1">Coaching from $8K, full readiness from $15K</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold accent-text">First attempt</div>
+                    <div class="text-sm text-slate-500 mt-1">The one SOC 2 Type I our operator led at a prior company passed clean, attested by a licensed CPA firm</div>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold accent-text">Zero</div>
+                    <div class="text-sm text-slate-500 mt-1">Undisclosed fees. Every platform referral is disclosed before it is earned</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credibility strip: firm-flavored claims -->
+    <section class="bg-slate-900 text-slate-300 py-6">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-medium">
+                <span class="text-white">Operator-led, not advisory-only</span>
+                <span class="text-slate-600">·</span>
+                <span>AI-accelerated documentation, human-reviewed</span>
+                <span class="text-slate-600">·</span>
+                <span>Fixed scope, fixed price</span>
+                <span class="text-slate-600">·</span>
+                <span>Platform-neutral, fees disclosed</span>
+                <span class="text-slate-600">·</span>
+                <span class="text-white">Advisory only, never the auditor</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three jobs, three parties -->
+    <section id="three-jobs" class="py-24 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-sm font-semibold accent-text mb-3 uppercase tracking-wider">Before you buy anything</p>
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-tight">Three jobs, three parties</h2>
+            <p class="text-lg text-slate-700 leading-relaxed mb-10">Compliance software, readiness consultants, and audit firms do different work. Buyers are routinely sold one as though it were the others, and that is where SOC 2 budgets get wasted.</p>
+
+            <div class="space-y-8">
+                <div class="border-l-2 border-slate-300 pl-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">The platform collects the proof</h3>
+                    <p class="text-slate-700 leading-relaxed">Vanta, Drata, Secureframe and others connect to your systems and gather evidence automatically. That is real work and it saves real time. It is also the part most people think is the whole job.</p>
+                </div>
+                <div class="border-l-2 border-blue-900 pl-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">The consultant decides what is worth proving</h3>
+                    <p class="text-slate-700 leading-relaxed">Which controls actually fit your business, whether your evidence would survive a sampler pulling it, and what the auditor will ask that no dashboard ever will. A platform can tell you a control is failing. It cannot tell you whether it was the right control for your business in the first place. <strong>This is the job we do.</strong></p>
+                </div>
+                <div class="border-l-2 border-slate-300 pl-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">The auditor independently tests it</h3>
+                    <p class="text-slate-700 leading-relaxed">A licensed CPA firm performs the examination and issues the report. They cannot design what they attest to, which is why readiness and audit are separate purchases. We are not an audit firm and we never grade our own work.</p>
+                </div>
+            </div>
+
+            <p class="mt-10 text-lg text-slate-700 leading-relaxed">You do not always need all three. You do need to know which one you are buying.</p>
+        </div>
+    </section>
+
+    <!-- Services: SOC 2 ladder -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <p class="text-sm font-semibold accent-text mb-3 uppercase tracking-wider">SOC 2 Readiness</p>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 leading-tight">The readiness ladder</h2>
+                <p class="text-slate-600 text-lg">Start where you are. Every engagement is remote, fixed-scope, and priced for teams without a compliance department. If you are not sure which rung you are on, the first one answers that for $2,500 and credits back if you go further.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 0: the entry rung. Real work at a real price, not an
+                     anchor we never honor: two days of analysis, delivered. -->
+                <div class="bg-white rounded-xl p-8 card-shadow transition ring-1 ring-blue-900/10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mb-2">Start here</p>
+                            <h3 class="text-xl font-bold">Readiness Diagnostic</h3>
+                        </div>
+                        <span class="text-sm font-semibold accent-text whitespace-nowrap">$2,500</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">2 weeks &middot; we do the work</p>
+                    <p class="text-slate-700 leading-relaxed font-medium mb-3">An independent read of where you actually stand.</p>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed">
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Every criterion marked real, asserted, or missing</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>A re-derivation of whatever you already believe is done</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>The three or four findings that would become audit exceptions</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Credits in full against a larger engagement within 60 days</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl p-8 card-shadow transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mb-2">Coach</p>
+                            <h3 class="text-xl font-bold">SOC 2 Readiness Coaching</h3>
+                        </div>
+                        <span class="text-sm font-semibold accent-text whitespace-nowrap">From $8K</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">4 to 8 weeks · your team drives</p>
+                    <p class="text-slate-700 leading-relaxed font-medium mb-3">Your team owns the work. We keep it on track.</p>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed">
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Office hours and document review</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Control guidance as you build</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Auditor liaison support</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Your own AI assistant set up to work the checklist with you</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>For founders and engineers carrying it themselves</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl p-8 card-shadow transition border-2" style="border-color: #1e3a8a;">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mb-2">End to end</p>
+                            <h3 class="text-xl font-bold">Full SOC 2 Readiness</h3>
+                        </div>
+                        <span class="text-sm font-semibold accent-text whitespace-nowrap">From $15K</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">12 to 16 weeks · we drive end to end</p>
+                    <p class="text-slate-700 leading-relaxed font-medium mb-3">We drive it end to end.</p>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed">
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Policies and control implementation</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Evidence collection and vendor reviews</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Pre-audit walkthrough</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Clean handoff to the audit firm</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>AI-drafted documentation, human reviewed</span></li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl p-8 card-shadow transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mb-2">Retainer</p>
+                            <h3 class="text-xl font-bold">Managed Compliance</h3>
+                        </div>
+                        <span class="text-sm font-semibold accent-text whitespace-nowrap">From $1.5K/mo</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">Rolling · after your audit</p>
+                    <p class="text-slate-700 leading-relaxed font-medium mb-3">Your Type II window opens the day after your as-of date.</p>
+                    <ul class="space-y-2 text-slate-600 leading-relaxed">
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>The compliance calendar runs, obligations open on schedule</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Criteria re-validated on cadence, with a written record of what was examined</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Security questionnaires answered from a maintained library</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Three tiers, $1.5K to $5K a month</span></li>
+                        <li class="flex gap-2"><span class="accent-text font-bold leading-6">&middot;</span><span>Or prepaid hours instead: 10 for $1,500, 20 for $2,800</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-center text-sm text-slate-600 mt-10 max-w-2xl mx-auto">
+                Need help past a coaching scope, or just someone to call after your audit? Prepaid hours: 10 for $1,500 or 20 for $2,800, used within 12 months.
+            </p>
+
+            <p class="text-center text-sm text-slate-500 mt-4 max-w-2xl mx-auto">
+                We are not an audit firm and do not issue SOC 2 reports. Readiness and advisory only, by design: nobody should audit their own work. When you are ready, we refer you to a licensed CPA firm and support you through the audit.
+            </p>
+
+            <!-- Honest-read CTA -->
+            <div class="mt-12 max-w-3xl mx-auto bg-slate-50 border border-slate-200 rounded-xl p-8 text-center">
+                <h3 class="text-xl font-bold mb-2">Not sure what you actually need?</h3>
+                <p class="text-slate-600 mb-5">Email us two paragraphs: what you sell, and what your buyer is asking for. We will tell you honestly whether you need coaching, full readiness, or nothing yet. No call required.</p>
+                <a href="mailto:hello@controlandfunction.com?subject=Where%20do%20we%20stand%3F" class="accent-bg text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center justify-center transition shadow-md hover:shadow-lg">
+                    Get an honest read
+                </a>
+            </div>
+            <!-- Payment reality. "From $15K" reads as a $15,000 bill, and the
+                 actual structure is 50/25/25 against delivery with every
+                 invoice net 30. That is a materially different proposition for
+                 a small buyer and it was stated nowhere they could see it. -->
+            <div class="mt-10 border-t border-slate-200 pt-8 max-w-3xl mx-auto">
+                <h3 class="text-lg font-bold text-slate-900 mb-3">How payment actually works</h3>
+                <p class="text-slate-600 leading-relaxed mb-3">
+                    Nothing is due the day you sign. Engagements are invoiced against delivery, and every invoice is net 30 by ACH. On a Full Readiness engagement that is <strong class="text-slate-900">50% invoiced at signature and payable thirty days later</strong>, 25% when your first two deliverables are accepted, and the last 25% when your auditor begins fieldwork.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    <strong class="text-slate-900">Audit fees are separate and are not ours.</strong> The report comes from an independent licensed CPA firm you engage directly, and you pay them directly. For a Type I at this size budget roughly $10,000 to $20,000, and expect real quotes to land outside that in both directions. We take nothing from any firm we introduce, and we will tell you that range before you ask.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Client portal -->
+    <section class="py-16 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid gap-8 md:grid-cols-2 md:items-center">
+                <div>
+                    <p class="text-sm font-semibold text-slate-400 mb-3 uppercase tracking-wider">The Client Portal</p>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-4">Your engagement, <span class="italic">visible</span>.</h2>
+                    <p class="text-slate-300 leading-relaxed">Every engagement runs through a live client portal: control-by-control readiness across your Trust Services Criteria, the phase timeline with real dates, and a running engagement log of everything that has happened. You watch your audit readiness move instead of waiting for a status meeting.</p>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li class="flex gap-3"><span class="text-emerald-400 font-bold">✓</span><span>Live control statuses, from client-asserted to independently validated</span></li>
+                    <li class="flex gap-3"><span class="text-emerald-400 font-bold">✓</span><span>Phase timeline that moves when the plan moves, with your audit date always in view</span></li>
+                    <li class="flex gap-3"><span class="text-emerald-400 font-bold">✓</span><span>A dated engagement log, so the record of the work is never a mystery</span></li>
+                    <li class="flex gap-3"><span class="text-emerald-400 font-bold">✓</span><span>Evidence pointers only, never your raw artifacts: sensitive material stays in your environment</span></li>
+                </ul>
+            </div>
+
+            <!-- Reported vs validated, with the real thing shown -->
+            <div class="mt-14 pt-12 border-t border-slate-700">
+                <div class="max-w-3xl">
+                    <h3 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">Reported is not validated.</h3>
+                    <p class="text-slate-300 leading-relaxed mb-4">
+                        Most compliance tooling collapses those two into one green square. <span class="text-white font-semibold">Reported</span> means you told us a control is in place. <span class="text-white font-semibold">Validated</span> means we read the criterion, looked at your actual evidence, and concluded it holds. The gap between them is where audit exceptions live, and closing it is the engagement.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        So every criterion in your portal carries the method before anyone touches it: what proves it, how we test it, and the population that would make it a finding. You can see what we intend to do to a control before we do it.
+                    </p>
+                </div>
+
+                <figure class="mt-10">
+                    <img src="assets/portal-validation-method.png"
+                         alt="A criterion in the Control and Function portal: change management, marked Reported and never validated, with an expanded panel showing what proves it, how it gets tested, and the population that would make it a finding."
+                         width="1400" height="460" loading="lazy" decoding="async"
+                         class="rounded-xl shadow-2xl ring-1 ring-slate-700 w-full">
+                    <figcaption class="mt-4 text-sm text-slate-400 leading-relaxed">
+                        One criterion from a sample engagement. Change management is a criterion auditors press hard on, because automated test gates prove a change was tested and never that it was authorized. The panel says so before an auditor has to.
+                    </figcaption>
+                </figure>
+
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 sm:items-center">
+                    <a href="https://portal.controlandfunction.com/demo"
+                       class="bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold inline-flex items-center justify-center transition shadow-md hover:shadow-lg hover:bg-slate-100">
+                        See a live example
+                    </a>
+                    <p class="text-sm text-slate-400">No login, no form. Sample data, not a client's.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dual framework / regulated buyers -->
+    <section id="frameworks" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12 max-w-3xl">
+                <p class="text-sm font-semibold accent-text mb-3 uppercase tracking-wider">Regulated Buyers</p>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 leading-tight">Selling into universities, health systems, or the enterprise?</h2>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    SOC 2 is rarely the whole ask. Regulated buyers layer their own obligations on top: HIPAA for health data, FERPA for student records, ISO 27001 for international and enterprise deals. We map them into one control set so you build one program, not three.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-8 card-shadow transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-xl font-bold">SOC 2 + HIPAA</h3>
+                        <span class="text-sm font-semibold accent-text whitespace-nowrap">Scoped</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">Healthcare and healthtech buyers</p>
+                    <p class="text-slate-700 leading-relaxed">We map Security Rule safeguards and business associate obligations onto the same control set your SOC 2 runs on, so the overlap gets built once.</p>
+                    <a href="/healthcare.html" class="mt-4 inline-block text-sm font-semibold accent-text hover:underline">What healthcare buyers check beyond the report &rarr;</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 card-shadow transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-xl font-bold">Ed-tech + FERPA</h3>
+                        <span class="text-sm font-semibold accent-text whitespace-nowrap">Scoped</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">University and K-12 procurement</p>
+                    <p class="text-slate-700 leading-relaxed">Student-record obligations, data governance language for institutional contracts, and the security questionnaires university procurement sends before a pilot becomes an adoption.</p>
+                    <a href="/edtech.html" class="mt-4 inline-block text-sm font-semibold accent-text hover:underline">What university procurement actually checks →</a>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 card-shadow transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-xl font-bold">SOC 2 + ISO 27001</h3>
+                        <span class="text-sm font-semibold accent-text whitespace-nowrap">Scoped</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">Enterprise and international deals</p>
+                    <p class="text-slate-700 leading-relaxed">When larger buyers ask for ISO certification alongside your SOC 2 report, we extend the program rather than starting over. Shared controls, one evidence pipeline.</p>
+                    <a href="/iso27001.html" class="mt-4 inline-block text-sm font-semibold accent-text hover:underline">Which one your buyers actually require &rarr;</a>
+                </div>
+            </div>
+
+            <div class="mt-10 border-t border-slate-200 pt-8 max-w-3xl space-y-4">
+                <p class="text-slate-600 leading-relaxed">
+                    <strong class="text-slate-900">Selling into banks or fintechs?</strong> A SOC 2 report shortens that review, it does not end it. Expect a several hundred question workbook, your penetration test and continuity plans by name, and contract terms negotiated by people who negotiate them constantly.
+                    <a href="/financial-services.html" class="font-semibold accent-text hover:underline whitespace-nowrap">What bank vendor review asks for &rarr;</a>
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    <strong class="text-slate-900">Shipping AI features?</strong> Buyers are starting to add AI questions to the same security reviews. That work has its own inventory, controls and evidence, so we run it as a separate practice called Assay.
+                    <a href="https://assayassurance.com" class="font-semibold accent-text hover:underline whitespace-nowrap">See Assay &rarr;</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline: What Full Readiness looks like -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16 max-w-3xl">
+                <p class="text-sm font-semibold accent-text mb-3 uppercase tracking-wider">Engagement Timeline</p>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-[1.05] mb-4">
+                    What <span class="italic accent-text">Full Readiness</span> actually looks like.
+                </h2>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Four phases, explicit deliverables, an end-of-phase checkpoint every time. No floating timeline, no scope creep.
+                </p>
+            </div>
+
+            <!-- Timeline grid: 4 phases -->
+            <div class="relative grid md:grid-cols-4 gap-8 md:gap-6 timeline-line">
+                <!-- Phase 01 -->
+                <div class="relative z-10">
+                    <div class="bg-white border-2 rounded-full w-10 h-10 flex items-center justify-center font-bold text-sm mb-4 shadow-sm" style="border-color: #1e3a8a;">
+                        <span class="accent-text">01</span>
+                    </div>
+                    <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1">Weeks 1 to 3</p>
+                    <h3 class="font-bold text-slate-900 mb-3">Scope and gap</h3>
+                    <ul class="text-sm text-slate-600 space-y-1.5 leading-relaxed">
+                        <li>· System description drafted</li>
+                        <li>· Trust Services Criteria gap assessment</li>
+                        <li>· Type I vs Type II sequencing plan</li>
+                        <li>· Platform decision, if any</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 02 -->
+                <div class="relative z-10">
+                    <div class="bg-white border-2 rounded-full w-10 h-10 flex items-center justify-center font-bold text-sm mb-4 shadow-sm" style="border-color: #1e3a8a;">
+                        <span class="accent-text">02</span>
+                    </div>
+                    <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1">Weeks 4 to 7</p>
+                    <h3 class="font-bold text-slate-900 mb-3">Controls built</h3>
+                    <ul class="text-sm text-slate-600 space-y-1.5 leading-relaxed">
+                        <li>· Policy set drafted and adopted</li>
+                        <li>· Access, logging, and change controls implemented</li>
+                        <li>· Vendor management stood up</li>
+                        <li>· Human review on every artifact</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 03 -->
+                <div class="relative z-10">
+                    <div class="bg-white border-2 rounded-full w-10 h-10 flex items-center justify-center font-bold text-sm mb-4 shadow-sm" style="border-color: #1e3a8a;">
+                        <span class="accent-text">03</span>
+                    </div>
+                    <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1">Weeks 8 to 12</p>
+                    <h3 class="font-bold text-slate-900 mb-3">Evidence collected</h3>
+                    <ul class="text-sm text-slate-600 space-y-1.5 leading-relaxed">
+                        <li>· Evidence mapped to every control</li>
+                        <li>· Remediation support where gaps remain</li>
+                        <li>· Vendor and subprocessor reviews</li>
+                        <li>· Internal dry-run walkthrough</li>
+                    </ul>
+                </div>
+
+                <!-- Phase 04 -->
+                <div class="relative z-10">
+                    <div class="accent-bg rounded-full w-10 h-10 flex items-center justify-center font-bold text-sm mb-4 shadow-sm">
+                        <span class="text-white">04</span>
+                    </div>
+                    <p class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-1">Weeks 13 to 16</p>
+                    <h3 class="font-bold text-slate-900 mb-3">Auditor handoff</h3>
+                    <ul class="text-sm text-slate-600 space-y-1.5 leading-relaxed">
+                        <li>· Audit firm referral and selection</li>
+                        <li>· Pre-audit walkthrough</li>
+                        <li>· Evidence package delivered</li>
+                        <li>· Support through the audit window</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pull-quote -->
+            <div class="mt-20 max-w-3xl mx-auto text-center">
+                <p class="text-2xl md:text-3xl text-slate-900 font-medium italic leading-snug">
+                    "Audit dates are deadlines, not aspirations. We treat them that way."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Why Us -->
+    <section id="about" class="py-24 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="mb-12 max-w-3xl">
+                <p class="text-sm font-semibold accent-text mb-3 uppercase tracking-wider">Why Control and Function</p>
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-[1.05]">
+                    Most readiness firms write policies. <span class="italic accent-text">We get you through the audit.</span>
+                </h2>
+            </div>
+
+            <div class="space-y-8">
+                <div class="grid gap-2 md:grid-cols-12 md:gap-6">
+                    <div class="md:col-span-1 text-3xl font-bold accent-text">01</div>
+                    <div class="md:col-span-11">
+                        <h3 class="font-bold mb-2">Operational, not advisory</h3>
+                        <p class="text-slate-700 leading-relaxed">The practice was built on running compliance as the operator, not observing it as a consultant. At a prior company, we led one SOC 2 Type I program end to end as the sole IT operator, with no outside MSP and no compliance platform, and the auditor passed it clean on the first attempt. We answered buyer security questionnaires ourselves in that role. We know what an auditor will press on and where companies waste cycles.</p>
+                    </div>
+                </div>
+
+                <div class="grid gap-2 md:grid-cols-12 md:gap-6">
+                    <div class="md:col-span-1 text-3xl font-bold accent-text">02</div>
+                    <div class="md:col-span-11">
+                        <h3 class="font-bold mb-2">Built for teams without a compliance department</h3>
+                        <p class="text-slate-700 leading-relaxed">In a company without a compliance function, security lands on the engineering lead's desk. The compliance platforms assume you have a dedicated compliance manager. You do not, and you should not need one. We deliver done-with-you readiness priced for your size.</p>
+                    </div>
+                </div>
+
+                <div class="grid gap-2 md:grid-cols-12 md:gap-6">
+                    <div class="md:col-span-1 text-3xl font-bold accent-text">03</div>
+                    <div class="md:col-span-11">
+                        <h3 class="font-bold mb-2">IT, security, and compliance under one roof</h3>
+                        <p class="text-slate-700 leading-relaxed">We can configure SSO and talk to engineers in their own language, not just write the policies. Faster engagements, fewer escalations, and a delivery cadence technical teams respect.</p>
+                    </div>
+                </div>
+
+                <div class="grid gap-2 md:grid-cols-12 md:gap-6">
+                    <div class="md:col-span-1 text-3xl font-bold accent-text">04</div>
+                    <div class="md:col-span-11">
+                        <h3 class="font-bold mb-2">AI-accelerated, human-reviewed</h3>
+                        <p class="text-slate-700 leading-relaxed">Policy sets and system descriptions eat consultant hours when drafted by hand, and firms bill accordingly. Our AI-assisted documentation pipeline compresses that work to days, with a human reviewing every artifact before it carries our name.</p>
+                    </div>
+                </div>
+
+                <div class="grid gap-2 md:grid-cols-12 md:gap-6">
+                    <div class="md:col-span-1 text-3xl font-bold accent-text">05</div>
+                    <div class="md:col-span-11">
+                        <h3 class="font-bold mb-2">Platform-neutral, always</h3>
+                        <p class="text-slate-700 leading-relaxed">Our partner relationships with the major platforms get you partner pricing you cannot get going direct. Some vendors also pay us a referral fee when a client we introduce signs. We disclose it in writing before it is earned, and it never decides the recommendation. Audit firms pay us nothing, ever. The neutrality comes from experience, not distance: we have hands-on Secureframe experience and speak the others fluently. If a platform genuinely fits your environment we will implement it with you. If it does not, we will say so and save you the subscription.</p>
+                    </div>
+                </div>
+
+                <div class="grid gap-2 md:grid-cols-12 md:gap-6">
+                    <div class="md:col-span-1 text-3xl font-bold accent-text">06</div>
+                    <div class="md:col-span-11">
+                        <h3 class="font-bold mb-2">Never the auditor</h3>
+                        <p class="text-slate-700 leading-relaxed">SOC 2 reports are issued by licensed CPA firms, and we are not one by design. We prepare you, point you to licensed audit firms, and hand off cleanly. We take no referral fee from any of them, so our recommendation has no revenue attached. We never audit our own work. That separation protects your report.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (visible twin of the FAQPage structured data above) -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="mb-10">
+                <p class="text-sm font-semibold accent-text mb-3 uppercase tracking-wider">FAQ</p>
+                <h2 class="text-4xl font-bold tracking-tight leading-tight">The questions every buyer asks first.</h2>
+            </div>
+            <div class="divide-y divide-slate-200">
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 list-none">What does SOC 2 readiness cost?<span class="ml-4 text-slate-400 transition group-open:rotate-45 text-xl leading-none">+</span></summary>
+                    <p class="mt-3 text-slate-600 leading-relaxed">A Readiness Diagnostic, an independent read of where you actually stand, is $2,500 and credits in full against a larger engagement within 60 days. Readiness coaching starts at $8,000 for teams that will drive the work themselves. Full readiness, where we drive the program end to end, starts at $15,000. Managed compliance retainers run $1,500 to $5,000 per month after your audit, and dual-framework engagements are scoped individually. Engagements are fixed fee, invoiced by milestone, payable by ACH or card. If you would rather have someone to call than a project, prepaid hours are available: 10 hours for $1,500 or 20 for $2,800, used within 12 months. No open ended hourly meters.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 list-none">Do you perform the SOC 2 audit itself?<span class="ml-4 text-slate-400 transition group-open:rotate-45 text-xl leading-none">+</span></summary>
+                    <p class="mt-3 text-slate-600 leading-relaxed">No. SOC 2 audits are performed by licensed CPA firms. We provide readiness and advisory services only: we prepare you, refer you to audit firms (taking no referral fee), and support you through the audit window. We never audit our own work. That separation protects the integrity of your report.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 list-none">How long does it take?<span class="ml-4 text-slate-400 transition group-open:rotate-45 text-xl leading-none">+</span></summary>
+                    <p class="mt-3 text-slate-600 leading-relaxed">A full readiness engagement typically runs 12 to 16 weeks from kickoff to auditor handoff. Coaching engagements run 4 to 8 weeks. One planning reality worth knowing early: audit firms book fieldwork 2 to 3 months out, and the fourth quarter is their busy season, so the audit date drives the schedule more than the readiness work does.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 list-none">Type I or Type II?<span class="ml-4 text-slate-400 transition group-open:rotate-45 text-xl leading-none">+</span></summary>
+                    <p class="mt-3 text-slate-600 leading-relaxed">A Type I covers control design at a point in time; a Type II covers operation over a period, usually 3 to 12 months. When a deal or procurement gate needs paper soon, Type I first is the right call. When nothing is gating, many companies now go straight to a Type II over a short observation window and skip one audit fee. We will tell you honestly which fits your situation, including when the answer saves you money with someone else.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 list-none">Do we need Vanta, Drata, or Secureframe?<span class="ml-4 text-slate-400 transition group-open:rotate-45 text-xl leading-none">+</span></summary>
+                    <p class="mt-3 text-slate-600 leading-relaxed">Not necessarily. Compliance platforms automate evidence collection well for some environments and poorly for others. Our advice stays platform-neutral, and our partner relationships with the major platforms get you partner pricing you cannot get going direct. Some vendors also pay us a referral fee when a client we introduce signs; we disclose it in writing before it is earned, and it never changes the recommendation. If one fits your stack we will implement it with you, and if not, the one SOC 2 Type I our operator led at a prior company used no platform at all and passed clean on the first attempt.</p>
+                </details>
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 list-none">Can you handle HIPAA, FERPA, or ISO 27001 alongside SOC 2?<span class="ml-4 text-slate-400 transition group-open:rotate-45 text-xl leading-none">+</span></summary>
+                    <p class="mt-3 text-slate-600 leading-relaxed">Yes. Healthcare buyers bring HIPAA, education buyers bring FERPA and the HECVAT questionnaire, and international or enterprise deals often ask for ISO 27001. We scope the SOC 2 work to map these into a single control set, so you build one program instead of three. Selling into universities? <a href="/edtech.html" class="accent-text underline">Read what university procurement actually checks</a>.</p>
+                    <p class="mt-3 text-slate-600">Vendor reports: <a href="/cuecs.html" class="accent-text underline">what Complementary User Entity Controls are, and why holding a vendor&rsquo;s SOC 2 is not reviewing it</a>.
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <p class="text-sm font-semibold text-slate-400 mb-3 uppercase tracking-wider">Contact</p>
+            <h2 class="text-4xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-6">Start the <span class="italic">conversation</span>.</h2>
+            <p class="text-slate-300 text-lg mb-10 leading-relaxed">
+                A 30-minute readiness call costs nothing and tells you exactly where you stand, whether it is your first SOC 2 or a second framework on top of it. No sales pressure. If we are not the right fit, we will say so and point you to someone who is.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="https://calendly.com/controlandfunction/discovery-call?utm_source=controlandfunction&amp;utm_medium=site&amp;utm_campaign=footer" class="bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold inline-flex items-center justify-center transition hover:bg-slate-100">
+                    Schedule a readiness call
+                </a>
+                <a href="mailto:hello@controlandfunction.com" class="border border-slate-600 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center justify-center hover:bg-slate-800 transition">
+                    hello@controlandfunction.com
+                </a>
+            </div>
+            <div class="text-sm text-slate-400">
+                Denver, Colorado · Available for engagements across the United States
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="guides" class="bg-slate-900 text-slate-400 border-t border-slate-800 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid gap-8 md:grid-cols-3 text-sm">
+                <div>
+                    <p class="text-slate-300 font-semibold mb-3">Guides</p>
+                    <ul class="space-y-2">
+                    <li><a href="/edtech.html" class="hover:text-white transition">Ed-tech and university procurement</a></li>
+                    <li><a href="/healthcare.html" class="hover:text-white transition">Healthcare and HIPAA</a></li>
+                    <li><a href="/financial-services.html" class="hover:text-white transition">Bank and fintech vendor review</a></li>
+                    <li><a href="/iso27001.html" class="hover:text-white transition">SOC 2 and ISO 27001</a></li>
+                    <li><a href="/cuecs.html" class="hover:text-white transition">Complementary user entity controls</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-slate-300 font-semibold mb-3">Get in touch</p>
+                    <ul class="space-y-2">
+                        <li><a href="#contact" class="hover:text-white transition">Schedule a readiness call</a></li>
+                        <li><a href="mailto:hello@controlandfunction.com" class="hover:text-white transition">hello@controlandfunction.com</a></li>
+                        <li><a href="https://portal.controlandfunction.com/demo" class="hover:text-white transition">See the client portal</a></li>
+                        <li><a href="https://www.linkedin.com/company/controlandfunction" target="_blank" rel="noopener" class="hover:text-white transition">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-slate-300 font-semibold mb-3">Control and Function LLC</p>
+                    <p class="leading-relaxed">Denver, Colorado. Engagements across the United States.</p>
+                    <p class="leading-relaxed mt-2">Not an audit firm. Readiness and advisory only: SOC 2 reports are issued by independent licensed CPA firms, and we never assess our own preparation work.</p>
+                    <p class="mt-3"><a href="/privacy.html" class="hover:text-white transition">Privacy</a></p>
+                </div>
+            </div>
+            <div class="mt-10 pt-6 border-t border-slate-800 text-xs">&copy; 2026 Control and Function LLC</div>
+        </div>
+    </footer>
+
+    <!-- Ask widget. Remove this one line to disable it site wide. -->
+    <script>document.querySelectorAll("details.cf-menu a").forEach(function(a){a.addEventListener("click",function(){a.closest("details").open=false;});});</script>
+    <script src="/assets/ask.js" defer></script>
+</body>
+</html>

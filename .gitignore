@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.next/
+*.md
+!/.github/**/*.md
+scripts/
+notes/
+drafts/
+internal/
+.env*
