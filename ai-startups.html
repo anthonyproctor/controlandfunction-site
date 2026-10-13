@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC 2 for AI Startups: Model Providers</title>
+    <meta name="description" content="If your product sends customer data to OpenAI, Anthropic or Google, that provider is part of your SOC 2. What the auditor asks and the four things to have in place.">
+    <link rel="canonical" href="https://controlandfunction.com/ai-startups.html">
+    <meta property="og:title" content="SOC 2 for AI startups, and what to do about the model providers">
+    <meta property="og:description" content="If your product sends customer data to OpenAI, Anthropic or Google, that provider is part of your SOC 2. What the auditor asks and the four things to have in place.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://controlandfunction.com/ai-startups.html">
+    <meta property="og:image" content="https://controlandfunction.com/assets/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SOC 2 for AI Startups: Model Providers">
+    <meta name="twitter:description" content="If your product sends customer data to OpenAI, Anthropic or Google, that provider is part of your SOC 2. What the auditor asks and the four things to have in place.">
+    <meta name="twitter:image" content="https://controlandfunction.com/assets/og-image.png">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is an AI model provider part of my SOC 2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if your product sends customer data to it. A model provider such as OpenAI, Anthropic or Google receives customer data on your behalf, which makes it a vendor under the SOC 2 vendor management criteria and usually a subprocessor your customers will want named."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What will a SOC 2 auditor ask about a model provider?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "What data goes to it, whether you obtained and reviewed its SOC 2 report, what customer controls that report expects you to run such as protecting API keys and managing console access, and what your contracts say about data use, retention and incident notice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the model provider's SOC 2 report cover my product?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Their report covers their systems. It says nothing about what data you send them, who on your team holds the API keys, or whether your contracts allow what you are doing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do fallback model providers count?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If your product falls back from one provider to another, or routes through a proxy or a cloud marketplace, every path the data can take counts, even one used rarely."
+      }
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "SOC 2 for AI startups, and what to do about the model providers",
+  "description": "If your product sends customer data to OpenAI, Anthropic or Google, that provider is part of your SOC 2. What the auditor asks and the four things to have in place.",
+  "datePublished": "2026-10-13",
+  "dateModified": "2026-10-13",
+  "author": {
+    "@type": "Organization",
+    "name": "Control and Function LLC"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Control and Function LLC"
+  },
+  "mainEntityOfPage": "https://controlandfunction.com/ai-startups.html"
+}
+    </script>
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/site.css">
+    <script data-goatcounter="https://controlandfunction.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <style>body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }</style>
+</head>
+<body class="text-slate-900 antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:text-slate-900 focus:shadow-lg">Skip to content</a>
+    <header class="border-b border-slate-200 bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/" class="font-bold text-lg tracking-tight">Control and Function</a>
+            <nav aria-label="Main" class="hidden md:flex space-x-8 text-sm text-slate-600">
+                <a href="/#services" class="hover:text-slate-900">Services</a>
+                <a href="/#frameworks" class="hover:text-slate-900">Frameworks</a>
+                <a href="/#faq" class="hover:text-slate-900">FAQ</a>
+                <a href="/#contact" class="hover:text-slate-900">Contact</a>
+            </nav>
+            <details class="cf-menu md:hidden relative">
+                <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer inline-flex items-center gap-2 min-h-11 px-4 rounded-lg border border-slate-300 text-sm font-semibold text-slate-800 hover:bg-slate-50">
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu
+                </summary>
+                <nav aria-label="Main" class="absolute right-0 top-full mt-2 w-60 rounded-lg border border-slate-200 bg-white py-2 shadow-lg z-50">
+                    <ul>
+                    <li><a href="/#services" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">Services</a></li>
+                    <li><a href="/#frameworks" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">Frameworks</a></li>
+                    <li><a href="/#faq" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">FAQ</a></li>
+                    <li><a href="/#contact" class="block px-4 py-3 min-h-11 text-base text-slate-700 hover:bg-slate-50 hover:text-slate-900">Contact</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <main id="main" class="max-w-3xl mx-auto px-6 py-16">
+        <p class="text-sm font-semibold text-blue-900 mb-3 uppercase tracking-wider">AI Companies · Vendor Risk</p>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 leading-tight">SOC 2 for AI startups, and what to do about the model providers</h1>
+        <p class="text-sm text-slate-500 mb-10">Control and Function · October 2026</p>
+
+        <div class="space-y-6 text-slate-700 leading-relaxed text-lg">
+            <p>If your product sends customer data to OpenAI, Anthropic, Google or anyone else&rsquo;s model, that provider is part of your SOC 2. Not as a footnote. It sits in the same place your cloud host does, and the auditor will ask the same questions about it.</p>
+            <p>Most AI startups find this out late. Here&rsquo;s how to get ahead of it.</p>
+            <h2 class="text-2xl font-bold text-slate-900 pt-4">The model provider is a vendor that touches customer data</h2>
+            <p>SOC 2 cares about where your customers&rsquo; data goes and who can see it. When a user types into your product and you pass that text to a model, the data has left your system and entered someone else&rsquo;s. That makes the model provider a vendor with access to customer data, which is exactly what the vendor management criteria are about.</p>
+            <p>It usually makes them a subprocessor too, in the privacy sense: a third party that processes your customers&rsquo; data on your behalf. Your customers&rsquo; security teams will want to know who those are, by name.</p>
+            <h2 class="text-2xl font-bold text-slate-900 pt-4">What the auditor will ask</h2>
+            <p>For each model provider, expect some version of these:</p>
+            <ul class="pl-6 space-y-2" style="list-style: disc;">
+                <li><strong>What data goes to them?</strong> Not &ldquo;user prompts&rdquo; in general. What fields, from which features, with or without names and emails.</li>
+                <li><strong>Do you have their SOC 2 report, and did you read it?</strong> Holding the PDF is not the same as reviewing it. The auditor wants to see who reviewed it, when, and what they concluded.</li>
+                <li><strong>What does their report expect you to do?</strong> Every vendor report lists controls it assumes the customer runs. For model providers these are usually things like protecting your API keys, managing who can access the provider&rsquo;s console, and turning on MFA. If you aren&rsquo;t doing them, their report doesn&rsquo;t cover as much as you think. (More on this in <a href="/cuecs.html" class="text-blue-900 underline">the CUECs guide</a>.)</li>
+                <li><strong>What do your contracts say?</strong> Data use, retention, whether your data trains their models, and how they notify you of an incident.</li>
+            </ul>
+            <h2 class="text-2xl font-bold text-slate-900 pt-4">The four things to have in place</h2>
+            <p><strong>1. A written list of what goes where.</strong> One table: each model provider, what data it receives, from which feature, and whether personal identifiers are stripped first. This is the single most useful document you can write. It answers the auditor, it answers your customers&rsquo; vendor reviews, and it forces you to find the feature nobody remembered sends email addresses along.</p>
+            <p><strong>2. A public subprocessor list.</strong> If you sell to banks, hospitals or universities, their vendor review will ask for it. A privacy policy that names your hosting provider but not the model providers your product actually calls is the gap they&rsquo;ll find first.</p>
+            <p><strong>3. A recorded review of each provider&rsquo;s report.</strong> Once a year, someone reads it, checks the period covers yours, checks the opinion was clean, maps the customer controls it lists to what you actually do, and writes down the result. A short page per vendor is enough.</p>
+            <p><strong>4. Access to the provider accounts in your access review.</strong> Teams review AWS and GitHub access every quarter and forget the model provider consoles entirely. Those consoles hold your API keys and often your usage logs. Add them to the same review.</p>
+            <h2 class="text-2xl font-bold text-slate-900 pt-4">Fallbacks and routers count too</h2>
+            <p>If your product falls back from one provider to another when the first is slow, or routes through a proxy or a cloud marketplace, every path the data can take counts. A fallback provider that only sees traffic one day a month still receives customer data. List it.</p>
+            <h2 class="text-2xl font-bold text-slate-900 pt-4">What doesn&rsquo;t help</h2>
+            <p><strong>Assuming the provider&rsquo;s SOC 2 covers you.</strong> Their report covers their systems. It says nothing about what you send them, who on your team holds the keys, or whether your contracts allow what you&rsquo;re doing.</p>
+            <p><strong>Treating &ldquo;we don&rsquo;t train on your data&rdquo; as the whole answer.</strong> Training is one question. Retention, access, incident notice and where the data is processed are others, and a bank&rsquo;s reviewer will ask all of them.</p>
+            <p><strong>Leaving it for the system description.</strong> The system description has to say which vendors are part of the system and how you oversee them. If the list and the reviews don&rsquo;t exist yet, that section can&rsquo;t be written honestly.</p>
+            <h2 class="text-2xl font-bold text-slate-900 pt-4">Where to start</h2>
+            <p>Write the table in step 1 this week. It takes an afternoon and everything else builds on it. If you want a second set of eyes on it, or on how your model providers will look to an auditor, that&rsquo;s the kind of thing a readiness review covers.</p>
+        </div>
+
+        <div class="mt-14 pt-8 border-t border-slate-200 text-sm text-slate-500 leading-relaxed">
+            <p>Anthony Proctor runs Control and Function, a SOC 2 readiness practice. He ran a SOC 2 Type I program end to end as the sole IT operator at a prior company, where a licensed CPA firm performed the attestation. Control and Function is not an audit firm and does not audit its own preparation work.</p>
+            <p class="mt-4"><a href="/#contact" class="text-blue-900 font-semibold hover:underline">Talk through your model providers &rarr;</a></p>
+
+            <!-- Cross-link between the two content pages. Both were sitting at
+                 "discovered, not crawled" on Google and Bing with nothing but the
+                 homepage pointing at them; internal links between related articles
+                 raise crawl priority and the topical relationship is genuine. -->
+            <div class="mt-12 border-t border-slate-200 pt-6">
+                <p class="text-xs font-semibold uppercase tracking-widest text-slate-500">Related</p>
+                <p class="mt-2"><a href="/cuecs.html" class="text-blue-900 underline font-semibold">Complementary User Entity Controls, and why holding a vendor&rsquo;s SOC 2 is not reviewing it</a><br>
+                <span class="text-slate-600">What every vendor report expects you to do, and how to map it before an auditor asks.</span></p>
+
+                <p class="mt-4"><a href="/financial-services.html" class="text-blue-900 underline font-semibold">What a bank third party risk review actually asks for</a><br>
+                <span class="text-slate-600">If banks are your buyers, this is the review your subprocessor list goes into.</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-16">
+        <div class="max-w-6xl mx-auto px-6 mb-6 pb-6 border-b border-slate-800">
+            <p class="text-slate-300 font-semibold text-sm mb-3">More guides</p>
+            <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+                    <a href="/edtech.html" class="hover:text-white transition">Ed-tech and university procurement</a>
+                    <a href="/healthcare.html" class="hover:text-white transition">Healthcare and HIPAA</a>
+                    <a href="/financial-services.html" class="hover:text-white transition">Bank and fintech vendor review</a>
+                    <a href="/iso27001.html" class="hover:text-white transition">SOC 2 and ISO 27001</a>
+                    <a href="/cuecs.html" class="hover:text-white transition">Complementary user entity controls</a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <div>© 2026 Control and Function LLC · Denver, Colorado · Not an audit firm · Readiness and advisory only</div>
+            <div class="flex gap-6">
+                <a href="/" class="hover:text-white transition">Home</a>
+                <a href="https://www.linkedin.com/company/controlandfunction" target="_blank" rel="noopener" class="hover:text-white transition">LinkedIn</a>
+                <a href="/privacy.html" class="hover:text-white transition">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <script>document.querySelectorAll("details.cf-menu a").forEach(function(a){a.addEventListener("click",function(){a.closest("details").open=false;});});</script>
+    <!-- Ask widget. Remove this one line to disable it site wide. -->
+    <script src="/assets/ask.js" defer></script>
+</body>
+</html>
